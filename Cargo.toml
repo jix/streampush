@@ -1,0 +1,18 @@
+[package]
+name = "streampush"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.41"
+bytes = "1.0.1"
+futures = "0.3.15"
+quinn = { version = "0.7", path = "quinn/quinn" }
+quinn-proto = { version = "0.7", path = "quinn/quinn-proto" }
+rcgen = "0.8.11"
+structopt = "0.3.21"
+tokio = { version = "1.7.0", features = ["full"] }
+tracing = "0.1.26"
+tracing-subscriber = "0.2.18"
